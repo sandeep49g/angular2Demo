@@ -1,0 +1,12 @@
+<app-header></app-header>
+<div class='container container--height'>
+    <div class='row'>
+        <div class='col-sm-8 space-bottom--2x'>
+            <app-trade-accounts (tradeAccount)="updateAccount($event)"></app-trade-accounts>
+        </div>
+        <div class='col-sm-4 graph-container'>
+            <app-graph [graphData]="listOfAccounts"></app-graph>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

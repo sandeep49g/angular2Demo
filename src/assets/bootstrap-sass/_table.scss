@@ -1,0 +1,18 @@
+table {
+    border-spacing: 0px;
+    width: 100%;
+    font-size: 0.9em;
+    td, th{
+        padding: 5px 30px;
+    }
+
+    th {
+        background-color: $table-header-bg;
+        color: $table-header-color;
+        text-align: left;
+    }
+
+    tr:last-child > td{
+        border-top: solid 2px $table-last-row-top-border;
+    }
+}

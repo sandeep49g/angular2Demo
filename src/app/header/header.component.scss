@@ -1,0 +1,32 @@
+@import '../../assets/bootstrap-sass/variables.scss';
+
+header{
+    padding: 35px 0;
+    background-color: $header-bg-color;
+    margin-bottom: 20px;
+    .navbar-brand{
+        height:auto;
+        padding: 0 15px;
+    }
+    .header-buttons{
+        /deep/ a{
+            font-size: 0.95em;
+            float:left;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-right:20px;
+            width: 100px;
+            background-color: rgba(239, 68, 35, 1);
+            &:hover, &:active{
+                color: #fff;
+            }
+            &:last-child{
+                margin-right:0;
+            }
+            p{
+                margin-bottom:0;
+            }
+        }
+    }
+}

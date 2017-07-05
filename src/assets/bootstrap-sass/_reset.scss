@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body {
+    margin: 0px;
+    font-size: 16px;
+    height: 100%;
+}
+
+//Helper class
+.space-bottom{
+    margin-bottom:10px;
+    &--2x{
+        margin-bottom: 30px
+    }
+}
+
+//Container Min-height
+.container--height{
+    min-height: calc(100% - 50px - 172px);
+}

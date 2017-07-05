@@ -1,0 +1,14 @@
+@import '../../assets/bootstrap-sass/variables.scss';
+
+footer{
+    position:relative;
+    height: 50px;
+    width: 100%;
+    background-color: #595959;
+    color: #fff;
+    .disclaimer{
+        padding-top: 5px;
+        font-style: italic;
+        font-size: 0.8rem;
+    }
+}

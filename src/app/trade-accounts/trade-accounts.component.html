@@ -1,0 +1,31 @@
+<div class='row'>
+  <div class='col-sm-6'>
+    <h3>Accounts</h3>
+  </div>
+  <div class='col-sm-6 text-right space-top'>
+    <app-button [iconClass]="'glyphicon-star'" [text]="'Add Account'" (callBack)="addAccount($event)">
+    </app-button>
+    <app-button [iconClass]="'glyphicon-star'" [text]="'Refresh'">
+    </app-button>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+    <table>
+      <tr>
+        <th>NAME</th>
+        <th>MARKET VALUE</th>
+        <th>CASH</th>
+        <th>LEGED</th>
+      </tr>
+      <tr *ngFor="let account of listOfAccounts">
+        <td>{{account.name}}</td>
+        <td>{{account.marketValue}}</td>
+        <td>{{account.cash}}</td>
+        <td class='text-center'>
+          <span class="legend" [style.background-color]="account.legend"></span>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
